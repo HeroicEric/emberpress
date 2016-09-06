@@ -13,6 +13,8 @@ module.exports = function(environment) {
       }
     },
 
+    wordpressHost: 'http://dev-emberpress.pantheonsite.io',
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

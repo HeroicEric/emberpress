@@ -1,0 +1,10 @@
+Search results for {{model.query}}
+
+<div class="list-group">
+  {{#each model.results as |post|}}
+    {{#link-to 'post' post.id class="list-group-item"}}
+      <h4 class="list-group-item-heading">{{post.title}}</h4>
+      <p class="list-group-item-text">{{{post.content}}}</p>
+    {{/link-to}}
+  {{/each}}
+</div>

@@ -1,0 +1,7 @@
+{{#each model as |product|}}
+  {{#link-to 'product' product.id}}
+    <h3>{{product.title}}</h3>
+    <h4>{{product.date}}</h4>
+    <div>{{{product.content}}}</div>
+  {{/link-to}}
+{{/each}}
